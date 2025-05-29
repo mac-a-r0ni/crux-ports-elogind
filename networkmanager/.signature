@@ -1,0 +1,10 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J+wnNZOJlG0OJKK4/8XHDrfv+5vuN50t1aImNV1Ey6X7Jgqo7o7UQucyfiRiFEFS9k83Z4aHmCS04whp3J6Hctg8=
+SHA256 (Pkgfile) = d6c4f113c9c426e9639713cbb16881575ba875f08be4e2c4aa88052119cac50e
+SHA256 (.footprint) = ea67e7d48960f54021373418623839db6eaee2923ccc550532d2165d202c9e4a
+SHA256 (NetworkManager-1.52.0.tar.bz2) = 4ec7423ac5d06dca846482b184a24a3905a6af0ac1c82a6056866ff1edaa2ae9
+SHA256 (networkmanager.rc) = dc0b743685214c0402d392a6a9b2632b19714795a04c0f42ba10026250d9f3fc
+SHA256 (NetworkManager.conf) = 44b048804c7c0b8b3b0c29b8632b6ad613c397d0a1635ec918e10c0fbcdadf21
+SHA256 (polkit.conf) = 7410be567871e4dc8ef1e8204f80b7cfd0dd08abfa514408b7d549bdc70dbaba
+SHA256 (dhcp.conf) = cd2a4b0079c0726973c1cf226c4e1cb4f2d27d02c16e0e08af7e4d6b8770423c
+SHA256 (org.freedesktop.NetworkManager.rules) = 7708da5de800684eb7036f29534ac6f3004115695428484e09b712da5bb1e8a5

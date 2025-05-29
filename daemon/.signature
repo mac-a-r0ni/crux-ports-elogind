@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J+2UH2tcVf35kMUCvymjJoaNX33SscE0cmAanXXdVcVGIqOvpxEHktfQ5hcg52iLsTP8jyWSlCj1xMyvzATbtGwQ=
+SHA256 (Pkgfile) = 78bb7dcdf60e3fb459a6c9e2a9da8b112f42aeae098862f58959a7ccfb143b2c
+SHA256 (.footprint) = 9673bdf15d8b17d934fd6b6cbf8c9c3992ed127c4d5d55b705972b2f0f1fe7b0
+SHA256 (daemon-0.8.4.tar.gz) = fa28859ad341cb0a0b012c11c271814f870482013b49f710600321d379887cd1

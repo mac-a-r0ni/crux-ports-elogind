@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J+5lDpkpa/I5vVK0lUswayo2/A9bhwoYDRpXsX3DN09I9YkQ1XEMv7CE1sDQuHpHseYV+O30ct3Ie0O4c8HdrDQI=
+SHA256 (Pkgfile) = 1fbd340e0d1ccce7246d34a167e21c8ccf63f429ade623c0f28ebb74fe189ad2
+SHA256 (.footprint) = b772df24fd430cfcf6a7870e61abcb0bc49fd939fd3d782464651c33f961b912
+SHA256 (procps-ng-4.0.5.tar.xz) = c2e6d193cc78f84cd6ddb72aaf6d5c6a9162f0470e5992092057f5ff518562fa
+SHA256 (sysctl.conf) = 27c68004a396334b972bbb99375088c3bbd65cfbed8abdfc8f0b77f45fd8e47f

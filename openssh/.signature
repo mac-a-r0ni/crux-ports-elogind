@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J+8CEOz0mnBA3TBnmugZz4wMTszPXTuboeZ1LTinX19KOpk4Sst9d12i2oec7hPtYOJfDGCHJgEA1bkOVInYUwAU=
+SHA256 (Pkgfile) = 2dedfef94209b09b3aa7b4874f0d998d984e263e01980a85f905e31f79c52665
+SHA256 (.footprint) = ded349fc65c62858a85611637171eb8a8a3777544553e45e8653f3828fa586dd
+SHA256 (openssh-10.0p1.tar.gz) = 021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
+SHA256 (sshd.rc) = 1278bd41c96aac4ffa51c528daf50eee8c0a6c51b02de23e46af1c2f1fcd084a
+SHA256 (sshd.pam) = 37792ec1d0aaf9986f8ed53bf4717e15e2510eda0578c0da72888f33e30802fe

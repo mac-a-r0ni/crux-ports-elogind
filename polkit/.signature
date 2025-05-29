@@ -1,0 +1,7 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J+6fsOrTKJYFR2f+U4j1iWkLu5NKzva3+NusTRVRm5aBi9C7ohA63b5RAN5vi5JsGHT5v94Do2Kex7oMM7jrvGAI=
+SHA256 (Pkgfile) = c7bf4c9bd92b26e486cc1e96b89a7fdac02f2e003e1f3e23a22241a4405c5789
+SHA256 (.footprint) = e567bb64fcad5fc1801abfdf7ab3c0a0f282c08cb71342d02b6f2358a5d4a51f
+SHA256 (polkit-126.tar.gz) = 2814a7281989f6baa9e57bd33bbc5e148827e2721ccef22aaf28ab2b376068e8
+SHA256 (22193ca2cc0f4e023d331cc1391f55143ef9cade.patch) = 3c03860a53415fc8deedd5b05774e137ccac49f2efb0229514ec59ca1aabfa16
+SHA256 (02_fix-polkitbackend-elogind-include.patch) = 5ceb03c981410d6c6cd0f18082a9b739253270a47c7d86b6c9266a065f045fb1

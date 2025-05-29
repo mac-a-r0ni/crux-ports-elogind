@@ -1,0 +1,64 @@
+# Description: elogind - extracted logind from systemd
+# URL: https://github.com/elogind/elogind
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: docbook-xsl gettext glib intltool libcap libseccomp python3-jinja2
+# Optiional: dbus linux-pam polkit
+
+name=elogind
+version=255.17
+release=1
+source=(https://github.com/$name/$name/archive/v${version}/$name-$version.tar.gz
+	10-enable-elogind-power.rules.gz
+	login-10-elogind.conf.manpage.fix.patch
+	elogind)
+
+build() {
+
+    cd $name-$version
+    patch -p1 -i $SRC/login-10-elogind.conf.manpage.fix.patch
+
+    meson setup build \
+	--buildtype release \
+	--prefix /usr \
+	--libexecdir /lib \
+	-D udevrulesdir=/lib/udev/rules.d \
+	-D man=enabled \
+	-D html=disabled \
+	-D pam=enabled \
+	-D pamlibdir=/lib/security \
+	-D pamconfdir=/etc/pam.d \
+	-D utmp=true \
+	-D default-hierarchy=legacy \
+	-D cgroup-controller=elogind \
+	-D halt-path=/sbin/halt \
+	-D poweroff-path=/sbin/poweroff \
+	-D reboot-path=/sbin/reboot \
+	-D default-kill-user-processes=false \
+	-D mode=release
+
+    ninja -C build
+
+DESTDIR=$PKG ninja -C build install
+
+# Create symlinks for elogind binaries to /bin/:
+mkdir -p $PKG/bin
+ln -sf /usr/bin/elogind-inhibit $PKG/bin/elogind-inhibit
+ln -sf /usr/bin/loginctl $PKG/bin/loginctl
+
+# Create supported dirs in /etc/elogind/ (local config)
+mkdir -p $PKG/etc/elogind/logind.conf.d/ $PKG/etc/elogind/sleep.conf.d/
+
+# Add login1 policy file that allows users in the 'power' group to shutdown/reboot the computer:
+mkdir -p $PKG/usr/share/polkit-1/rules.d
+zcat $SRC/10-enable-elogind-power.rules.gz > $PKG/usr/share/polkit-1/rules.d/10-enable-session-power.rules
+
+# We don't need the hidden files to make inferior package managers keep dirs:
+find $PKG -type f -name ".keep_dir" -exec rm -f {} \;
+
+# Add start/stop script
+mkdir -p $PKG/etc/rc.d
+install -m 0755 $SRC/elogind $PKG/etc/rc.d
+
+rm -rf $PKG/usr/share/{bash-completion,doc,locale,zsh}
+
+}

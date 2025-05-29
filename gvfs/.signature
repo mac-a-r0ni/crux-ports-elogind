@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J+zrmbhVEKRgGq8yMOPlB+cDx8Mk3DVzrWgyfUXqNXbIEFBQdKUCLF8oLnBEDVXJJYqNfZaMcsgQf6umUNLvbfQE=
+SHA256 (Pkgfile) = 424c3e0ffca658a28b09023d0ee40d9fcff8202b03544f20fba6d38a9136bd25
+SHA256 (.footprint) = 1e46f15dd8211fa3f73462be7aa3f6aa65bf0903b8bac480d5b4b99d9eef016d
+SHA256 (gvfs-1.57.2.tar.xz) = f16bef8eca1fd6c117e85db011d21e915669790d55867349c5f1b291299e9585

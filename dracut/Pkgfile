@@ -1,0 +1,28 @@
+# Description: An event-driven initramfs infrastructure
+# URL: https://github.com/dracut-ng/dracut-ng
+# Maintainer: Jay Lanagan, j at lngn dot net
+
+name=dracut
+version=107
+release=2
+source=(https://github.com/dracut-ng/dracut-ng/archive/$version/$name-$version.tar.gz
+    https://crux.nu/files/$name-man-pages-$version.tar.xz elogind.conf 10-crux.conf)
+
+build() {
+    cd dracut-ng-$version
+    ./configure --prefix=/usr \
+        --sysconfdir=/etc \
+        --disable-documentation
+    sed -i -e 's,-arx modules,-rx modules,' Makefile
+    make
+    make DESTDIR=$PKG install
+    rm $PKG/usr/lib/$name/modules.d/*/README*
+    cp -r $SRC/usr $PKG/
+    chmod -R g-w $PKG/usr/lib/$name/modules.d
+
+# Include elogind-uaccess-command to allow processing uaccess rules correctly:
+
+cat $SRC/10-crux.conf > $PKG/etc/dracut.conf.d/10-crux.conf
+cat $SRC/elogind.conf > $PKG/etc/dracut.conf.d/elogind.conf
+
+}

@@ -1,0 +1,80 @@
+# Description: Network configuration tool
+# URL: https://wiki.gnome.org/Projects/NetworkManager/
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: gnutls libndp libnewt libxslt nss polkit python3-gobject
+# Optional: bash-completion dnsmasq elogind iwd jansson libpsl libteam mobile-broadband-provider-info modemmanager ppp vala wireguard-tools
+
+name=networkmanager
+version=1.52.0
+release=2
+source=(https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/archive/$version/NetworkManager-$version.tar.bz2
+  networkmanager.rc
+  NetworkManager.conf
+  polkit.conf
+  dhcp.conf
+  org.freedesktop.NetworkManager.rules
+)
+
+build() {
+  prt-get isinst elogind && PKGMK_NM+=' -D suspend_resume=elogind'
+  prt-get isinst elogind && PKGMK_NM+=' -D session_tracking=elogind' || PKGMK_NM+=' -D session_tracking=no'
+  prt-get isinst iwd && PKGMK_NM+=' -D iwd=true'
+  prt-get isinst jansson || PKGMK_NM+=' -D ovs=false'
+  prt-get isinst libpsl || PKGMK_NM+=' -D libpsl=false'
+  prt-get isinst modemmanager mobile-broadband-provider-info || PKGMK_NM+=' -D modem_manager=false'
+  prt-get isinst ppp || PKGMK_NM+=' -D ppp=false'
+  prt-get isinst vala && PKGMK_NM+=' -D vapi=false'
+
+  /usr/bin/grep -rl '^#!.*python$' | xargs sed -i '1s/python/&3/'
+
+  meson setup NetworkManager-$version build $PKGMK_NM \
+    --prefix /usr \
+    --sysconfdir /etc \
+    --localstatedir /var \
+    --libexecdir /usr/lib/networkmanager \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=false \
+    -D b_pie=true \
+    -D crypto=nss \
+    -D dbus_conf_dir=/usr/share/dbus-1/system.d \
+    -D udev_dir=/lib/udev \
+    -D dhcpcd=/sbin/dhcpcd \
+    -D iptables=/usr/sbin/iptables \
+    -D nft=/usr/bin/nft \
+    -D resolvconf=true \
+    -D config_dns_rc_manager_default=resolvconf \
+    -D modify_system=true \
+    -D ifupdown=true \
+    -D docs=false \
+    -D selinux=false \
+    -D libaudit=no \
+    -D more_logging=false \
+    -D qt=false \
+    -D systemdsystemunitdir=no \
+    -D systemd_journal=false \
+    -D nm_cloud_setup=false \
+    -D ebpf=false \
+    -Dmore_asserts=0 \
+    -Dmore_logging=false
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+
+  # Install config file
+  install -Dm 644 $SRC/NetworkManager.conf $PKG/etc/NetworkManager/NetworkManager.conf
+  install -Dm 644 $SRC/dhcp.conf $PKG/etc/NetworkManager/conf.d/dhcp.conf
+
+  # install polkit rules
+  install -Dm 644 $SRC/org.freedesktop.NetworkManager.rules $PKG/usr/share/polkit-1/rules.d/org.freedesktop.NetworkManager.rules
+  install -Dm 644 $SRC/polkit.conf $PKG/etc/NetworkManager/conf.d/polkit.conf
+
+  # Install startup script
+  install -Dm 755 $SRC/$name.rc $PKG/etc/rc.d/$name
+
+  # Remove rundir etc
+  rm -rf $PKG/var/run $PKG/usr/share/{gtk-,}doc $PKG/usr/share/man/man5/nmcli-examples.5 $PKG/usr/share/locale
+
+  # cleanup
+  rm -rf $PKG/usr/lib/firewalld
+  prt-get isinst bash-completion || rm -rf $PKG/usr/share/bash-completion
+}

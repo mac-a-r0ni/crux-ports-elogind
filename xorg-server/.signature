@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J++uvoQM8KxrjD/GzngzVAmvj7buL98yRL6JLgk2BfLM8KT69dLoqXCqQL7ZYs4GS0HzkigZjgJVMk6sdh+SNuAI=
+SHA256 (Pkgfile) = 5e16de7ca17f1e9b63d46a19daa6a248fd723055880614ead0646965f90f9103
+SHA256 (.footprint) = 95cceb4233d205593c980dadf36524fbcf7ab23549ab07f1eecd3f0e1077aabb
+SHA256 (xorg-server-21.1.16.tar.xz) = b14a116d2d805debc5b5b2aac505a279e69b217dae2fae2dfcb62400471a9970
