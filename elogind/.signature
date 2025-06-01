@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/elogind.pub
-RWQPEcpHPj0J+xEL+lmqWqVpLpntGgLS40oKh4+uKJM3bC13q2rRtTHh6D7rl0iyXBdCRox7r+91IeHR8NWdRkw4hFZkuk9L3w0=
+RWQPEcpHPj0J+y0EOSuuEYpg3aL02laY3B4D2CBjAtQqCqF1KKvrxR/zStNMbe2j6gtvj/LQ5NuS8Z/gLkoaEwP7Dx90gz/tkAU=
 SHA256 (Pkgfile) = 22b301e639f6f894b835b44cc848f88b0b4b1c85368e5eda578460906c5ad900
 SHA256 (.footprint) = 8ff83c0b1cbb5075da2150369e3128526bc3a2219c64d27d1ee75d305f00de8e
 SHA256 (elogind-255.17.tar.gz) = a9725ae3f73f8d910de84c108bc11bfd4c782bef6a4190b2ec70c5d2f22344db
 SHA256 (10-enable-elogind-power.rules.gz) = 0fc0bde6e1ac833608db13d4ea561da2fa5553958933562a6aa94767bc8906c5
 SHA256 (login-10-elogind.conf.manpage.fix.patch) = b37e2c9d517d5432ef9c12e07ea031e02dffa35c5fb17358561b5041f6bd0b10
-SHA256 (elogind) = 40e236bf071f00c7b25c150cfaaf0c28f76683497afc369615781c0319b1616e
+SHA256 (elogind) = d73bd3cebff0b4ec639e448036d1dbc7e61239327289b9aca8563ac0beb813d5

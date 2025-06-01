@@ -13,10 +13,10 @@ f:b6d8aa69eb8d63098e9df48031d6b24f:openssh/.signature
 f:06a4bfa1a108231dd1748b26acd4dc5b:openssh/Pkgfile
 f:daeab7d6b09570ab0b0eb8c297134a31:openssh/sshd.pam
 f:672f0ed66338d1e605e3055916333ccd:openssh/.footprint
-f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/elogind
+f:dd297c34b53ae849a7f8926d163bea60:elogind/elogind
 f:7eb6338447c0f23f8e137d0fe7dec155:elogind/pre-install
 f:673e903cac381b0f975007165f78ab32:elogind/10-enable-elogind-power.rules.gz
-f:d4eb1d0f97967d77923b9a9bf98a6591:elogind/.signature
+f:4eb7f88bce2e3a10972e3083d6f8203d:elogind/.signature
 f:c5716166dc3207c34e27d55c6907991a:elogind/login-10-elogind.conf.manpage.fix.patch
 f:cbced3e6ad94754c70b8bc967edffacf:elogind/Pkgfile
 f:0147b1e3cd6c863a004eede9319cb5b7:elogind/.footprint
@@ -55,8 +55,8 @@ f:5fdd5195218b1759f55dccc7b1a86cc4:procps/.signature
 f:e252a579938327e7c99c54620faa4146:procps/sysctl.conf
 f:eeab239757c2ac9344f9ee0c3becb1ee:procps/Pkgfile
 f:c85f57049c0c64aa6e8de66e86bbecce:procps/.footprint
-f:c52e2b205c53678999a69a18a912ec97:daemon/.signature
-f:f24c65437d53747dff9edd4db6f2dc03:daemon/Pkgfile
+f:3147976dce19cea9f825a85e5ad187b0:daemon/.signature
+f:a1877bb721ea1efb218e150ee61c7fae:daemon/Pkgfile
 f:2bcca690ea6af706dbbe31a8f5c9e58d:daemon/.footprint
 f:8524a25df3733c011c848872278e8df0:polkit/pre-install
 f:92b5aec81c047fdcbc06361079842e4d:polkit/.signature

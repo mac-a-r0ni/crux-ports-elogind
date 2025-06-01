@@ -17,7 +17,6 @@ build() {
 
     ./configure $PKGMK_DAEMON \
 	--prefix=/usr \
-	--enable-logind \
 	--disable-mail-test \
 	--destdir=$PKG
 
