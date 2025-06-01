@@ -20,7 +20,8 @@ build() {
     meson setup build \
 	--buildtype release \
 	--prefix /usr \
-	--libexecdir /lib \
+	--libdir=/lib \
+	--libexecdir /lib/$name \
 	-D udevrulesdir=/lib/udev/rules.d \
 	-D man=enabled \
 	-D html=disabled \

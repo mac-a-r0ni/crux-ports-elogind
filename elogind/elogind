@@ -4,7 +4,7 @@
 #
 
 SSD=/sbin/start-stop-daemon
-PROG=/lib/elogind
+PROG=/lib/elogind/elogind
 PID=/run/elogind.pid
 OPTS="--daemon"
 

@@ -13,13 +13,13 @@ f:b6d8aa69eb8d63098e9df48031d6b24f:openssh/.signature
 f:06a4bfa1a108231dd1748b26acd4dc5b:openssh/Pkgfile
 f:daeab7d6b09570ab0b0eb8c297134a31:openssh/sshd.pam
 f:672f0ed66338d1e605e3055916333ccd:openssh/.footprint
-f:dd297c34b53ae849a7f8926d163bea60:elogind/elogind
+f:a9e7ccb4cc486e1967f58572f8a2060b:elogind/elogind
 f:7eb6338447c0f23f8e137d0fe7dec155:elogind/pre-install
 f:673e903cac381b0f975007165f78ab32:elogind/10-enable-elogind-power.rules.gz
-f:4eb7f88bce2e3a10972e3083d6f8203d:elogind/.signature
+f:e136495d01dfa9823b63eeaaa2e6a4db:elogind/.signature
 f:c5716166dc3207c34e27d55c6907991a:elogind/login-10-elogind.conf.manpage.fix.patch
-f:cbced3e6ad94754c70b8bc967edffacf:elogind/Pkgfile
-f:0147b1e3cd6c863a004eede9319cb5b7:elogind/.footprint
+f:78c732a8170fb0c5f22e56d9508e8ec0:elogind/Pkgfile
+f:e65b861152aa0224976b9708a0a10ee4:elogind/.footprint
 f:23bc5ff22fe4f9a208d65fbbfd489ad9:dbus/30-dbus.launch
 f:95412978f8aa3c9fc667543107086479:dbus/post-install
 f:6ee7d5ba378faa26d9795c52a8f6d6c8:dbus/.signature
