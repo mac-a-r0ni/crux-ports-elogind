@@ -18,10 +18,10 @@ build() {
     patch -p1 -i $SRC/login-10-elogind.conf.manpage.fix.patch
 
     meson setup build \
-	--buildtype release \
-	--prefix /usr \
+	--buildtype=release \
+	--prefix=/usr \
 	--libdir=/lib \
-	--libexecdir /lib/$name \
+	--libexecdir=/lib/$name \
 	-D udevrulesdir=/lib/udev/rules.d \
 	-D man=enabled \
 	-D html=disabled \
@@ -52,6 +52,11 @@ mkdir -p $PKG/etc/elogind/logind.conf.d/ $PKG/etc/elogind/sleep.conf.d/
 # Add login1 policy file that allows users in the 'power' group to shutdown/reboot the computer:
 mkdir -p $PKG/usr/share/polkit-1/rules.d
 zcat $SRC/10-enable-elogind-power.rules.gz > $PKG/usr/share/polkit-1/rules.d/10-enable-session-power.rules
+
+# move pkgconfig dir so things find elogind
+mkdir -p $PKG/usr/lib/pkgconfig
+mv $PKG/lib/pkgconfig/libelogind.pc $PKG/usr/lib/pkgconfig
+rmdir $PKG/lib/pkgconfig
 
 # We don't need the hidden files to make inferior package managers keep dirs:
 find $PKG -type f -name ".keep_dir" -exec rm -f {} \;

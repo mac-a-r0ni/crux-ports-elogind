@@ -20,13 +20,13 @@ build() {
         --sysconfdir=/etc \
         --libexecdir=lib/dbus \
         --buildtype=plain \
-        --wrap-mode nodownload \
+        --wrap-mode=nodownload \
         -D b_lto=true \
         -D b_pie=true \
         -D dbus_daemondir=/usr/sbin \
         -D dbus_user=messagebus \
         -D runtime_dir=/run \
-        -D system_pid_file=/run/dbus/pid \
+        -D system_pid_file=/run/dbus.pid \
         -D system_socket=/run/dbus/system_bus_socket \
         -D elogind=enabled
 
