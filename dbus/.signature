@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/elogind.pub
-RWQPEcpHPj0J+7VIJN6hR/W5Ujvt146EV51n4+4ymdC5+3ZEWcWoWp2DtX/E1YgxFUfOE3kTP9/+FUzUWNGyNYkIr8xx1/6IvgQ=
-SHA256 (Pkgfile) = a3dfbdb86c00827e510af8d535c6065c47c815d4c78e4442b2298d311460efc0
+RWQPEcpHPj0J+8TCsqVPNSYnC+ddwHrqWfdLqme7yyfiOQdguVPhwHsJlFmLQvgDzV+xps41nKcA0n0KYiq8XGG8KbyTJiEo4Ak=
+SHA256 (Pkgfile) = 5c52df6e27a5fc8fef4b2cde7a1cbd42f1a6b68f42453c4f40b44b88ab5a067c
 SHA256 (.footprint) = e0ac449400608d18dc626752deba455e7066ffa4ca6dfce3106f624993c8ccb6
 SHA256 (dbus-1.16.2.tar.xz) = 0ba2a1a4b16afe7bceb2c07e9ce99a8c2c3508e5dec290dbb643384bd6beb7e2
 SHA256 (fix-daemon-location.patch) = 32862e56777619a479ebefc45589cb76207c836de24a8bca14aecb4552e42528

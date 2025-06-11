@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J+z5fhNwBnUJ8Q2BUkbspFiSeJgN2k5ZdPIkpGmIiTShqgps9qYVVVZZ5YxKOefJBJPsfIunQ75KVDKrozl37GAU=
+SHA256 (Pkgfile) = 0fa808a6186d8035c29d1949ef1332374d02b580d8fb76a08e0e33a2566207ac
+SHA256 (.footprint) = 74a3140dac6d1f6d8f19b9be12c395632acb7001a3254ed732cd905e79e57f86
+SHA256 (swayidle-1.8.0.tar.gz) = 0fba74c520a2bd64acd00bc3bce7bc8c7b84a2609c0f66329d72dfb33cca03d7

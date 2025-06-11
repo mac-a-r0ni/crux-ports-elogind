@@ -1,0 +1,35 @@
+# Description: An i3-compatible wayland compositor.
+# URL: https://swaywm.org/
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: basu json-c pango wlroots
+# Optional: gdk-pixbuf scdoc seatd elogind
+
+name=sway
+version=1.11
+release=2
+source=(https://github.com/swaywm/sway/archive/$version/$name-$version.tar.gz
+  8405.patch)
+
+build() {
+  patch -Np1 -d $name-$version -i $SRC/8405.patch
+
+  prt-get isinst elogind && PKGMK_SWAY+=' -D sd-bus-provider=libelogind' || PKGMK_SWAY+=' -D sd-bus-provider=basu'
+  prt-get isinst bash-completion || PKGMK_SWAY+=' -D bash-completions=false'
+  prt-get isinst zsh || PKGMK_SWAY+=' -D zsh-completions=false'
+
+  meson setup $name-$version build $PKGMK_SWAY \
+    --prefix=/usr \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=true \
+    -D b_pie=true \
+    -D tray=enabled \
+    -D fish-completions=false \
+    -D werror=false
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+
+  # needs CONFIG_*_FS_SECURITY to work
+  # https://github.com/swaywm/sway/pull/6994
+  setcap 'cap_sys_nice=eip' $PKG/usr/bin/sway || true
+}

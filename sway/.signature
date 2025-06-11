@@ -1,0 +1,6 @@
+untrusted comment: verify with /etc/ports/elogind.pub
+RWQPEcpHPj0J+1ZQsOjEiHivwHEVif+OUGo0JVGZAOc4uFyLRhCeto6whwyB3FznRT0XhDHurXWIVVmOc1swqTV7g/ThpyYUtAo=
+SHA256 (Pkgfile) = 74eee0a89f6bc0122cf2dfbdb668e45b1b70a2b2179d857e95cdaf093fb52dc7
+SHA256 (.footprint) = df31aa733c3f4e6ad0a4b0752905ac239847f5d61c1a488b2e6ed926523a1b3b
+SHA256 (sway-1.11.tar.gz) = 034ec4519326d6af5275814700dde46e852c5174614109affe4c86b2fbee062a
+SHA256 (8405.patch) = a72d60cd128f43bb399601b54c51619ff302b99ee1f2cfbe7709b73078769d37

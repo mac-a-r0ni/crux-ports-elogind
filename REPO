@@ -3,6 +3,8 @@ d:elogind
 d:dbus
 d:networkmanager
 d:gvfs
+d:sway
+d:swayidle
 d:dracut
 d:xorg-server
 d:procps
@@ -22,9 +24,11 @@ f:6a3a24b6d0d802f65ced892c8ecb3da1:elogind/Pkgfile
 f:ed0e9172864f40da32f26a1ef4a8c7cf:elogind/.footprint
 f:23bc5ff22fe4f9a208d65fbbfd489ad9:dbus/30-dbus.launch
 f:95412978f8aa3c9fc667543107086479:dbus/post-install
-f:26c718212b8ebb498ba2da41ecfaa75d:dbus/.signature
+f:dfc92dcabfed949c6278c41c26fb1b55:dbus/dbus#1.16.2-2.pkg.tar.xz
+f:7c2c9086204248f99cfd1a375d2b13ea:dbus/.signature
+f:97832e6f0a260936d28536e5349c22e5:dbus/dbus-1.16.2.tar.xz
 f:51a52d31f257ce19b1a4f8bd71a7de68:dbus/fix-daemon-location.patch
-f:193cba020d1dc2152a871cb4f0da27b6:dbus/Pkgfile
+f:6982d367f57a82c5ca2176f7a60b0225:dbus/Pkgfile
 f:ced1a4cd68fdf77a19fc55668489ead0:dbus/dbus-enable-elogind.patch
 f:326bdc6965e46ecae7b99bffc6696864:dbus/.footprint
 f:c51f2067699af541512233bbdd48dec4:dbus/rc.dbus
@@ -41,7 +45,14 @@ f:a0b57ae963ffe075c161bc6bacabd457:gvfs/post-install
 f:07b8fc1ac4830ef9a156bb231b97e74e:gvfs/.signature
 f:45af1cc9f1a36b963978e4b99aa810b3:gvfs/Pkgfile
 f:3af40d9bc5f346e31d45117ffe993b6c:gvfs/.footprint
+f:1925e572930c16a4622b1fa14a51a9d2:sway/.signature
+f:87f4df6c65f2aa430990855ace187c39:sway/Pkgfile
+f:f24cc0e90aa47f215eb812f6ee593905:sway/.footprint
+f:3e690ac9d6a3c4356637e59f2574e3d5:sway/8405.patch
 f:155db66782bbd563c855ed7d0c9e6fd1:elogind.pub
+f:95acd7574940fd8ed535b2e097528f9d:swayidle/.signature
+f:64f14973c58d00dfc3366874fb25ea4d:swayidle/Pkgfile
+f:dd64318596cd12b40bd01d3739d4229a:swayidle/.footprint
 f:52ef5707c63960c07accbe08bd27b79f:dracut/.signature
 f:1e63f71757dea5fcc807b5ec63eb1e55:dracut/Pkgfile
 f:18648a236cbc8582e24298f174d44e86:dracut/elogind.conf

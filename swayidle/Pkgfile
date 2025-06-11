@@ -1,0 +1,27 @@
+# Description: Idle management daemon for Wayland
+# URL: https://github.com/swaywm/swayidle
+# Maintainer: Jay Lanagan, j at lngn dot net
+# Depends on: wayland-protocols
+# Optional: scdoc
+
+name=swayidle
+version=1.8.0
+release=2
+source=(https://github.com/swaywm/swayidle/archive/$version/$name-$version.tar.gz)
+
+build() {
+  prt-get isinst bash-completion || PKGMK_SWAYIDLE+=' -D bash-completions=false'
+  prt-get isinst zsh || PKGMK_SWAYIDLE+=' -D zsh-completions=false'
+
+  meson setup $name-$version build $PKGMK_SWAYIDLE \
+    --prefix=/usr \
+    --buildtype=plain \
+    --wrap-mode nodownload \
+    -D b_lto=true \
+    -D b_pie=true \
+    -D logind=enabled \
+    -D logind-provider=elogind \
+    -D fish-completions=false
+  meson compile -C build
+  DESTDIR=$PKG meson install -C build
+}
