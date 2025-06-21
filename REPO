@@ -56,9 +56,9 @@ f:1e63f71757dea5fcc807b5ec63eb1e55:dracut/Pkgfile
 f:18648a236cbc8582e24298f174d44e86:dracut/elogind.conf
 f:da66c8c1e879b9228df994b2ecc403bf:dracut/.footprint
 f:0ad3a17f3cf28d3f53659f98670c0a4a:dracut/10-crux.conf
-f:368a81d79f778ffe023e43d688e9ddae:xorg-server/.signature
+f:64281dcf41bba7b1ec07fa49e17c528c:xorg-server/.signature
 f:73932869961838e0409fbbff9e83c979:xorg-server/README
-f:d062fe266ea7e12ca8580beb4b5b0ec4:xorg-server/Pkgfile
+f:141e819c67c47da37471983ef8a8c701:xorg-server/Pkgfile
 f:8e02c2d55acc3c90e4b77c3c09bcf41e:xorg-server/.footprint
 f:5fdd5195218b1759f55dccc7b1a86cc4:procps/.signature
 f:e252a579938327e7c99c54620faa4146:procps/sysctl.conf

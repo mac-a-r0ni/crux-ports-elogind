@@ -5,7 +5,7 @@
 # Optional: elogind
 
 name=xorg-server
-version=21.1.16
+version=21.1.18
 release=2
 source=(https://www.x.org/releases/individual/xserver/$name-$version.tar.xz)
 
