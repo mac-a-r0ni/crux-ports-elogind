@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/elogind.pub
-RWQPEcpHPj0J+wnNZOJlG0OJKK4/8XHDrfv+5vuN50t1aImNV1Ey6X7Jgqo7o7UQucyfiRiFEFS9k83Z4aHmCS04whp3J6Hctg8=
-SHA256 (Pkgfile) = d6c4f113c9c426e9639713cbb16881575ba875f08be4e2c4aa88052119cac50e
-SHA256 (.footprint) = ea67e7d48960f54021373418623839db6eaee2923ccc550532d2165d202c9e4a
-SHA256 (NetworkManager-1.52.0.tar.bz2) = 4ec7423ac5d06dca846482b184a24a3905a6af0ac1c82a6056866ff1edaa2ae9
+RWQPEcpHPj0J+9UQzJN/6XvDeu3QqG8nq3kq3IZvnhKlhSSGbcqj6KdcRDpjiZcphdINeMwGwqsoLDD+FQDTMsfPYeBnIOlhXgY=
+SHA256 (Pkgfile) = 91818486d5553d84c46c3a27f7f2230ab5ef184a2f39a85baaeddd0d4a48cd18
+SHA256 (.footprint) = 1bd649f453596cadcddb1db68f0eb0e80ff681c3d51468125e92398ef83ebe2f
+SHA256 (NetworkManager-1.52.1.tar.bz2) = 8997dafb8131599134f75ecb2fcdc2d3ea977129796f2ea8b628a05702e6b7de
 SHA256 (networkmanager.rc) = dc0b743685214c0402d392a6a9b2632b19714795a04c0f42ba10026250d9f3fc
 SHA256 (NetworkManager.conf) = 44b048804c7c0b8b3b0c29b8632b6ad613c397d0a1635ec918e10c0fbcdadf21
 SHA256 (polkit.conf) = 7410be567871e4dc8ef1e8204f80b7cfd0dd08abfa514408b7d549bdc70dbaba

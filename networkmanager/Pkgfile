@@ -5,7 +5,7 @@
 # Optional: bash-completion dnsmasq elogind iwd jansson libpsl libteam mobile-broadband-provider-info modemmanager ppp vala wireguard-tools
 
 name=networkmanager
-version=1.52.0
+version=1.52.1
 release=2
 source=(https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/archive/$version/NetworkManager-$version.tar.bz2
   networkmanager.rc

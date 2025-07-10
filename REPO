@@ -32,12 +32,12 @@ f:326bdc6965e46ecae7b99bffc6696864:dbus/.footprint
 f:c51f2067699af541512233bbdd48dec4:dbus/rc.dbus
 f:4a6fd05ae47bb208f58799b4e4e41745:networkmanager/polkit.conf
 f:8959cd1832461aa0255c3a42fbc5b52f:networkmanager/networkmanager.rc
-f:83f1352f76356c8e424b40063b4a93a8:networkmanager/.signature
+f:0b46282f547252afa97284c7f7c1323e:networkmanager/.signature
 f:567871363f64767a20704a4f9d70e87f:networkmanager/README
-f:b8b23412761759f5289b5ae2b4f204ff:networkmanager/Pkgfile
+f:a3e989097ab13875a4051f1e04c379b2:networkmanager/Pkgfile
 f:3a7fb4b8ff084c1ccfaeb16e1650c574:networkmanager/org.freedesktop.NetworkManager.rules
 f:1653159d6634fb62d3a5c548b7a56151:networkmanager/NetworkManager.conf
-f:b6478bd4beea3809b6ed8ed4b6638df6:networkmanager/.footprint
+f:ce4fab47b31ca63c0d14b0f0c2d04333:networkmanager/.footprint
 f:b722fa02f904a9c8ed0d2ec21cbfc588:networkmanager/dhcp.conf
 f:a0b57ae963ffe075c161bc6bacabd457:gvfs/post-install
 f:07b8fc1ac4830ef9a156bb231b97e74e:gvfs/.signature
