@@ -43,8 +43,8 @@ f:a0b57ae963ffe075c161bc6bacabd457:gvfs/post-install
 f:07b8fc1ac4830ef9a156bb231b97e74e:gvfs/.signature
 f:45af1cc9f1a36b963978e4b99aa810b3:gvfs/Pkgfile
 f:3af40d9bc5f346e31d45117ffe993b6c:gvfs/.footprint
-f:1925e572930c16a4622b1fa14a51a9d2:sway/.signature
-f:87f4df6c65f2aa430990855ace187c39:sway/Pkgfile
+f:6b59041c7812f5302606dfb5e774fb6c:sway/.signature
+f:dd46949f5e66ed89f064561695e04805:sway/Pkgfile
 f:f24cc0e90aa47f215eb812f6ee593905:sway/.footprint
 f:3e690ac9d6a3c4356637e59f2574e3d5:sway/8405.patch
 f:155db66782bbd563c855ed7d0c9e6fd1:elogind.pub
