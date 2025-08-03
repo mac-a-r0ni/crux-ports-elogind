@@ -120,6 +120,7 @@ drwxr-xr-x	root/root	usr/include/libnm/
 -rw-r--r--	root/root	usr/include/libnm/nm-setting-ovs-port.h
 -rw-r--r--	root/root	usr/include/libnm/nm-setting-ppp.h
 -rw-r--r--	root/root	usr/include/libnm/nm-setting-pppoe.h
+-rw-r--r--	root/root	usr/include/libnm/nm-setting-prefix-delegation.h
 -rw-r--r--	root/root	usr/include/libnm/nm-setting-proxy.h
 -rw-r--r--	root/root	usr/include/libnm/nm-setting-serial.h
 -rw-r--r--	root/root	usr/include/libnm/nm-setting-sriov.h
@@ -156,11 +157,11 @@ drwxr-xr-x	root/root	usr/include/libnm/
 -rw-r--r--	root/root	usr/include/libnm/nm-wimax-nsp.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/
-drwxr-xr-x	root/root	usr/lib/NetworkManager/1.52.1/
--rwxr-xr-x	root/root	usr/lib/NetworkManager/1.52.1/libnm-device-plugin-adsl.so
--rwxr-xr-x	root/root	usr/lib/NetworkManager/1.52.1/libnm-device-plugin-ovs.so
--rwxr-xr-x	root/root	usr/lib/NetworkManager/1.52.1/libnm-device-plugin-wifi.so
--rwxr-xr-x	root/root	usr/lib/NetworkManager/1.52.1/libnm-settings-plugin-ifupdown.so
+drwxr-xr-x	root/root	usr/lib/NetworkManager/1.54.0/
+-rwxr-xr-x	root/root	usr/lib/NetworkManager/1.54.0/libnm-device-plugin-adsl.so
+-rwxr-xr-x	root/root	usr/lib/NetworkManager/1.54.0/libnm-device-plugin-ovs.so
+-rwxr-xr-x	root/root	usr/lib/NetworkManager/1.54.0/libnm-device-plugin-wifi.so
+-rwxr-xr-x	root/root	usr/lib/NetworkManager/1.54.0/libnm-settings-plugin-ifupdown.so
 drwxr-xr-x	root/root	usr/lib/NetworkManager/VPN/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/conf.d/
 drwxr-xr-x	root/root	usr/lib/NetworkManager/dispatcher.d/

@@ -5,7 +5,7 @@
 # Optional: bash-completion dnsmasq elogind iwd jansson libpsl libteam mobile-broadband-provider-info modemmanager ppp vala wireguard-tools
 
 name=networkmanager
-version=1.52.1
+version=1.54.0
 release=2
 source=(https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/archive/$version/NetworkManager-$version.tar.bz2
   networkmanager.rc
@@ -20,6 +20,7 @@ build() {
   prt-get isinst elogind && PKGMK_NM+=' -D session_tracking=elogind' || PKGMK_NM+=' -D session_tracking=no'
   prt-get isinst iwd && PKGMK_NM+=' -D iwd=true'
   prt-get isinst jansson || PKGMK_NM+=' -D ovs=false'
+  prt-get isinst libnvme || PKGMK_NM+=' -D nbft=false'
   prt-get isinst libpsl || PKGMK_NM+=' -D libpsl=false'
   prt-get isinst modemmanager mobile-broadband-provider-info || PKGMK_NM+=' -D modem_manager=false'
   prt-get isinst ppp || PKGMK_NM+=' -D ppp=false'
