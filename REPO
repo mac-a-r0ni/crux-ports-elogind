@@ -51,10 +51,10 @@ f:155db66782bbd563c855ed7d0c9e6fd1:elogind.pub
 f:95acd7574940fd8ed535b2e097528f9d:swayidle/.signature
 f:64f14973c58d00dfc3366874fb25ea4d:swayidle/Pkgfile
 f:dd64318596cd12b40bd01d3739d4229a:swayidle/.footprint
-f:52ef5707c63960c07accbe08bd27b79f:dracut/.signature
-f:1e63f71757dea5fcc807b5ec63eb1e55:dracut/Pkgfile
+f:e648c89ca75276c858134af78215a984:dracut/.signature
+f:2cf4f5157ba6ff24d052f3b61f578a11:dracut/Pkgfile
 f:18648a236cbc8582e24298f174d44e86:dracut/elogind.conf
-f:da66c8c1e879b9228df994b2ecc403bf:dracut/.footprint
+f:6fd03d90aa8a8d1d65cba8a68937ae01:dracut/.footprint
 f:0ad3a17f3cf28d3f53659f98670c0a4a:dracut/10-crux.conf
 f:64281dcf41bba7b1ec07fa49e17c528c:xorg-server/.signature
 f:73932869961838e0409fbbff9e83c979:xorg-server/README

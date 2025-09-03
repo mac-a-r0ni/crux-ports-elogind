@@ -1,8 +1,8 @@
 untrusted comment: verify with /etc/ports/elogind.pub
-RWQPEcpHPj0J+24O2VlTHBHtPAFp6Fxrax+pEka/tjic38kPLZ7TLBFXPJCjArGUYbgh1QkC9P9tvlNgBheJg+75F2ULMhRHAwk=
-SHA256 (Pkgfile) = 2baf26c05101c0df8cb0d6f821abda8c857d6f31beff8971d151cf6846c0f8fd
-SHA256 (.footprint) = 8daa22bd91fdb64501ca769221641fc312e05f904c031c19fd0397be5c8a2e8c
-SHA256 (dracut-107.tar.gz) = b39d0d1cd35ff43aba8771c5367d8c6c59bb432c0cac62f49601f21c0d634895
-SHA256 (dracut-man-pages-107.tar.xz) = 3994b54c5c6d939d73a5d67a78b75cecd80e080924bc5be6174fabde42f89700
+RWQPEcpHPj0J+65W07E1CsBtAU72pXmnPqatA/gVmeaJa5/HHGF1WN8s54MAH/j4XNeu4jRpFgrY+9VARouJN6XPWmolNjMpOgo=
+SHA256 (Pkgfile) = c5d15b69961a15c0c84b4bae85f71ab1ed082e6749eb2f8bedebfee9d0ae9460
+SHA256 (.footprint) = c3b238d9118795e044e40c089be593d581387cb89ea31dabb35983d604d4e614
+SHA256 (dracut-108.tar.gz) = 8a84bdb4ba29b1bf3cd6aef6e76933329e6b1fd3fbf059962728e2e676c16f73
+SHA256 (dracut-man-pages-108.tar.xz) = dc906e6fa045ce6c65b7aa9701841c479f7956fd82d3f85ecf9d35489d53dde2
 SHA256 (elogind.conf) = 63a02fe26931d7b29958639aa8fb951b690fcedd728dd5e566e8120b2095f628
 SHA256 (10-crux.conf) = 96f9525875bf68f2e4ee881b18643aa8b4d8945001b50aa709218523dd1eb0d8

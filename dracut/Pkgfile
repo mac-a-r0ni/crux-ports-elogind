@@ -3,7 +3,7 @@
 # Maintainer: Jay Lanagan, j at lngn dot net
 
 name=dracut
-version=107
+version=108
 release=2
 source=(https://github.com/dracut-ng/dracut-ng/archive/$version/$name-$version.tar.gz
     https://crux.nu/files/$name-man-pages-$version.tar.xz elogind.conf 10-crux.conf)
